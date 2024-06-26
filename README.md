@@ -26,8 +26,8 @@
   <li>🐈‍⬛ gaitober" => "gato"</li>
 </ul>
 
-  <h3>TEST:</h3>
-        <simes enterstenter tenterxober senter traidufarcenter entersober simesgnimesfimescai qufarenter enterl probergraimai senter enterjentercufartai denter mainenterrai coberrrenterctai>
+  <h3>UNENCRYPTION BUTTON TEST:</h3>
+        simes enterstenter tenterxober senter traidufarcenter entersober simesgnimesfimescai qufarenter enterl probergraimai senter enterjentercufartai denter mainenterrai coberrrenterctai
 
 <h2>Tecnologias Utilizadas:</h2>
 <ul>
