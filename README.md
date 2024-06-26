@@ -1,16 +1,16 @@
 <h1>Encriptador-Alura</h1>
-<p>Encriptador de texto para compartir mensajes secretos.</p>
+<p>🧑🏻‍💻 Encriptador de texto para compartir mensajes secretos.</p>
 
 <h2>Acceso al proyecto mediante QR:</h2>
 <img src="./images/qr-encryptor.png" alt="Enlace QR" width="250">
 
 <h2>Las "llaves" de encriptación que utilizaremos son las siguientes:</h2>
 <ul>
-  <li>La letra "e" es convertida para "enter"</li>
-  <li>La letra "i" es convertida para "imes"</li>
-  <li>La letra "a" es convertida para "ai"</li>
-  <li>La letra "o" es convertida para "ober"</li>
-  <li>La letra "u" es convertida para "ufat"</li>
+  <li>🔐La letra "e" es convertida para "enter"</li>
+  <li>🔐 La letra "i" es convertida para "imes"</li>
+  <li>🔐 La letra "a" es convertida para "ai"</li>
+  <li>🔐 La letra "o" es convertida para "ober"</li>
+  <li>🔐 La letra "u" es convertida para "ufat"</li>
 </ul>
 
 <h2>Reglas del proyecto:</h2>
