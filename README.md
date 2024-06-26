@@ -20,11 +20,11 @@
   <li>Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.</li>
 </ul>
 
-<h3>Por ejemplo:</h3>
-<ul>
-  <li>🐈"gato" => "gaitober"</li>
-  <li>🐈‍⬛ gaitober" => "gato"</li>
-</ul>
+    <h3>Por ejemplo:</h3>
+    <ul>
+      <li>🐈"gato" => "gaitober"</li>
+      <li>🐈‍⬛ gaitober" => "gato"</li>
+    </ul>
 
 <h2>Tecnologias Utilizadas:</h2>
 <ul>
