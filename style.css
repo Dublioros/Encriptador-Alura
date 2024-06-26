@@ -300,6 +300,12 @@ strong.strong-josedev {
 }
 
 @media (max-width: 734px) {
+
+    h1.title,
+    h2.subtitle {
+        margin: 1.5rem;
+    }
+    
     textarea {
         width: min-content;
         height: 10rem;
