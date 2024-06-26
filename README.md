@@ -20,11 +20,14 @@
   <li>Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.</li>
 </ul>
 
-    <h3>Por ejemplo:</h3>
-    <ul>
-      <li>🐈"gato" => "gaitober"</li>
-      <li>🐈‍⬛ gaitober" => "gato"</li>
-    </ul>
+<h2>Por ejemplo:</h2>
+<ul>
+  <li>🐈"gato" => "gaitober"</li>
+  <li>🐈‍⬛ gaitober" => "gato"</li>
+</ul>
+
+  <h3>TEST:</h3>
+    simes enterstenter tenterxober senter traidufarcenter entersober simesgnimesfimescai qufarenter enterl probergraimai senter enterjentercufartai denter mainenterrai coberrrenterctai
 
 <h2>Tecnologias Utilizadas:</h2>
 <ul>
