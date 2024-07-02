@@ -35,3 +35,5 @@
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
+
+<h3>**Nota: todo el proyecto fue realizado en idioma ingles por fines de accesibilidad.**</h3>
