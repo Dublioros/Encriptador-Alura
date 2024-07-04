@@ -169,6 +169,7 @@ textarea {
     margin: 1rem 4rem 0rem 4rem;
     display: flex;
     justify-content: center;
+    place-content: space-evenly;
 }
 
 input.btn {
