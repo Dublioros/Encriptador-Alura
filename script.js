@@ -25,20 +25,20 @@ function transformText(text, codifications) {
 // Show text result
 function showResult(message, text) {
     document.getElementById("area-final").value = text;
-    Swal.fire(({
+    Swal.fire({
         icon: "success",
         title: message,
         showConfirmButton: false,
         timer: 1500,
         background: '#15415F',
         color: 'white'
-    }));
+    });
 }
 
 // Handle encryption or decryption
 function handleTransformation(type) {
     const isEncrypt = type === 'encrypt';
-    const textArea = document.getElementById(isEncrypt ? "area-origin" : "area-final");
+    const textArea = document.getElementById("area-origin");
     const text = textArea.value.toLowerCase();
     const loaderElement = document.querySelector('.loader');
 
@@ -47,15 +47,11 @@ function handleTransformation(type) {
             [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufar']] :
             [['enter', 'e'], ['imes', 'i'], ['ai', 'a'], ['ober', 'o'], ['ufar', 'u']];
         const transformedText = transformText(text, codifications);
-        
-        if (isEncrypt) {
-            if (loaderElement) {
-                loaderElement.classList.add('ready');
-            }
-            showResult("Encryption Successful", transformedText);
-        } else {
-            showResult("Decryption Successful", transformedText);
+
+        if (loaderElement) {
+            loaderElement.classList.add('ready');
         }
+        showResult(isEncrypt ? "Encryption Successful" : "Decryption Successful", transformedText);
     } else {
         Swal.fire({
             icon: "error",
@@ -94,7 +90,10 @@ function copyText() {
                 background: '#15415F',
                 color: 'white'
             });
-            document.querySelector('.loader').classList.add('ready');
+            const loaderElement = document.querySelector('.loader');
+            if (loaderElement) {
+                loaderElement.classList.add('ready');
+            }
         }).catch(err => {
             Swal.fire({
                 icon: "error",
@@ -120,7 +119,6 @@ function clearText() {
 
     const loaderElement = document.querySelector('.loader');
     if (loaderElement) {
-        loaderElement.classList.add('loader');
         loaderElement.classList.remove('ready');
     }
     Swal.fire({
@@ -136,8 +134,13 @@ function clearText() {
 // Transition Function
 document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("fade-in");
+
+    // Add event listeners for encrypt and decrypt buttons
+    document.getElementById("btn-encode").addEventListener("click", encrypt);
+    document.getElementById("btn-decode").addEventListener("click", decrypt);
 });
 
+// Handle navigation links fade-out
 document.querySelectorAll(".nav-links a").forEach(function (link) {
     link.addEventListener("click", function (e) {
         e.preventDefault();
