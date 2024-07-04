@@ -11,20 +11,22 @@
 /* Transitions smooth */
 .fade-out {
     opacity: 0;
-    transition: opacity 0.5 ease-out;
+    transition: opacity 0.5s ease-out;
 }
 
 .fade-in {
     opacity: 1;
-    transition: opacity 0.5 ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 /* Set the body background color */
 body {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: fixed;
     background-color: black;
-    background-image: url('./images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,7 +78,7 @@ body.fade-in {
     color: var(--text-lightblue);
 }
 
-/* Styling for the tittle */
+/* Styling for the title */
 h1.title,
 h2.subtitle {
     display: flex;
@@ -90,14 +92,23 @@ h2.subtitle {
     font-size: 1.5rem;
 }
 
-/* Styling for the section */
+/* Styling for the main section */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
 section {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     height: fit-content;
     margin-bottom: 1%;
-    text-align-last: center;
 }
 
 section#section-about {
@@ -141,13 +152,11 @@ textarea {
     margin: 0 0 0 4rem;
 }
 
-/* Estilo para textarea al pasar el mouse */
 textarea:hover {
     outline: none;
-    /* Elimina el borde al pasar el mouse */
 }
 
-/*Styling for textarea*/
+/* Styling for textarea */
 textarea {
     border-color: var(--background-color-footer-nav);
     padding: 1rem;
@@ -155,10 +164,11 @@ textarea {
     text-align-last: auto;
 }
 
-/* Styling for buttons*/
+/* Styling for buttons */
 .div-btn {
     margin: 1rem 4rem 0rem 4rem;
-    display: ruby-text;
+    display: flex;
+    justify-content: center;
 }
 
 input.btn {
@@ -170,7 +180,6 @@ input.btn {
     color: var(--btn-color);
     background: var(--text-lightblue);
     transition: background 0.3s ease, color 0.3s ease;
-    /* Smooth transition */
 }
 
 input.btn:hover {
@@ -196,8 +205,6 @@ img.img-portrait {
 
 /* Styling for the footer */
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: var(--background-color-footer-nav);
     color: var(--text-color);
@@ -222,7 +229,6 @@ strong.strong-josedev {
 
 @media (max-width: 1080px) {
 
-    /* Adjust layout for smaller screens */
     .container-left,
     .container-right {
         margin: 0 15rem 4rem 15rem;
@@ -244,7 +250,6 @@ strong.strong-josedev {
 
     footer {
         display: block;
-        position: relative;
     }
 
     textarea {
@@ -305,7 +310,7 @@ strong.strong-josedev {
     h2.subtitle {
         margin: 1.5rem;
     }
-    
+
     textarea {
         width: min-content;
         height: 10rem;
@@ -323,6 +328,15 @@ strong.strong-josedev {
 
     .img-logo {
         width: 100px;
+    }
+}
+
+@media (max-width: 498px) {
+
+    .container-left, .container-right {
+        margin: 0 15rem 4rem 15rem;
+        width: 30%;
+        place-self: center;
     }
 }
 
