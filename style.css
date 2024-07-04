@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     background: fixed;
     background-color: black;
-    background-image: url('https://github.com/Dublioros/Encriptador-Alura/blob/main/images/background.jpg?raw=true');
+    background-image: url(https://github.com/Dublioros/Encriptador-Alura/blob/main/images/background.jpg?raw=true);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
