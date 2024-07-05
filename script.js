@@ -31,7 +31,8 @@ function showResult(message, text) {
         showConfirmButton: false,
         timer: 1500,
         background: '#15415F',
-        color: 'white'
+        color: 'white',
+        heightAuto: false
     });
 }
 
@@ -58,7 +59,8 @@ function handleTransformation(type) {
             title: "Something went wrong!",
             footer: 'Only letters from a to z and spaces are accepted',
             background: '#15415F',
-            color: 'white'
+            color: 'white',
+            heightAuto: false
         });
         if (loaderElement) {
             loaderElement.classList.remove('ready');
@@ -88,7 +90,8 @@ function copyText() {
                 showConfirmButton: false,
                 timer: 1500,
                 background: '#15415F',
-                color: 'white'
+                color: 'white',
+                heightAuto: false
             });
             const loaderElement = document.querySelector('.loader');
             if (loaderElement) {
@@ -98,7 +101,8 @@ function copyText() {
             Swal.fire({
                 icon: "error",
                 title: "Something went wrong!",
-                footer: `Could not copy text: ${err}`
+                footer: `Could not copy text: ${err}`,
+                heightAuto: false
             });
         });
     } else {
@@ -107,7 +111,8 @@ function copyText() {
             title: "Something went wrong!",
             footer: "No text to copy",
             background: '#15415F',
-            color: 'white'
+            color: 'white',
+            heightAuto: false
         });
     }
 }
@@ -127,7 +132,8 @@ function clearText() {
         showConfirmButton: false,
         timer: 1500,
         background: '#15415F',
-        color: 'white'
+        color: 'white',
+        heightAuto: false
     });
 }
 
