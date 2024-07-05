@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     background: fixed;
     background-color: black;
-    background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,7 +169,6 @@ textarea {
     margin: 1rem 4rem 0rem 4rem;
     display: flex;
     justify-content: center;
-    place-content: space-evenly;
 }
 
 input.btn {
@@ -181,6 +180,7 @@ input.btn {
     color: var(--btn-color);
     background: var(--text-lightblue);
     transition: background 0.3s ease, color 0.3s ease;
+    margin: 0.5rem;
 }
 
 input.btn:hover {
