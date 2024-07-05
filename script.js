@@ -8,7 +8,7 @@ function toLowerCase(str) {
 
 // Receive only letters and spaces
 function verifyLetter(event) {
-    if (event.key.match(/[a-z\s]/i) == null) {
+    if (event.key.match(/[a-zñ\s]/i) == null) {
         event.preventDefault();
     }
 }
@@ -43,7 +43,7 @@ function handleTransformation(type) {
     const text = textArea.value.toLowerCase();
     const loaderElement = document.querySelector('.loader');
 
-    if (/^[a-z\s]*$/.test(text) && text.length > 0) {
+    if (/^[a-zñ\s]*$/.test(text) && text.length > 0) {
         const codifications = isEncrypt ?
             [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufar']] :
             [['enter', 'e'], ['imes', 'i'], ['ai', 'a'], ['ober', 'o'], ['ufar', 'u']];
