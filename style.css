@@ -339,6 +339,10 @@ strong.strong-josedev {
         width: 30%;
         place-self: center;
     }
+
+    input.btn {
+        width: 144px;
+    }
 }
 
 /* HTML: <div class="loader"></div> */
