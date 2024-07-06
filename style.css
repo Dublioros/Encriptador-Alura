@@ -345,6 +345,17 @@ strong.strong-josedev {
     }
 }
 
+@media (max-width: 371px) {
+    
+    .container-left, .container-right {
+        width: 200px;
+    }
+
+    .div-btn {
+        display: contents;
+    }
+}
+
 /* HTML: <div class="loader"></div> */
 .loader {
     width: fit-content;
