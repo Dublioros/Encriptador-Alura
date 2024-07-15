@@ -312,8 +312,7 @@ strong.strong-josedev {
 
 @media (max-width: 820px) {
     textarea {
-        width: 10rem;
-        height: 10rem;
+        width: -webkit-fill-available;
     }
 
     section {
@@ -330,8 +329,7 @@ strong.strong-josedev {
     }
 
     textarea {
-        width: min-content;
-        height: 10rem;
+        width: -webkit-fill-available;
     }
 
     .nav-links {
