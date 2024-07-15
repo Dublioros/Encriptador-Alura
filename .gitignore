@@ -1,0 +1,96 @@
+# Sistema operativo
+/AppData/
+/Documents/
+/Downloads/
+/Dropbox/
+/Favorites/
+/Links/
+/Music/
+/NTUSER.DAT
+/OneDrive/
+/Pictures/
+/Saved Games/
+/Searches/
+/Tracing/
+/Videos/
+/eclipse/
+/ntuser.dat.LOG1
+/ntuser.dat.LOG2
+/ntuser.ini
+
+# Herramientas de desarrollo
+/.idea/
+/.vscode/
+/node_modules/
+/.m2/
+/.p2/
+/.ssh/
+/.sts4/
+/.templateengine/
+/.thumbnails/
+/.webclipse/
+
+# Otros archivos
+*.log
+*.txt
+*.pdf
+
+../../../../.m2/
+../../../../.mcreator/
+../../../../.node_repl_history
+../../../../.nuget/
+../../../../.openjfx/
+../../../../.p2/
+../../../../.redhat/
+../../../../.ssh/
+../../../../.sts4/
+../../../../.templateengine/
+../../../../.thumbnails/
+../../../../.viminfo
+../../../../.vscode/
+../../../../.webclipse/
+../../../../3D Objects/
+../../../../AndroidStudioProjects/
+../../../../AppData/
+../../../../Books Developers/
+../../../../BullseyeCoverageError.txt
+../../../../CLionProjects/
+../../../../Contacts/
+../2034-logica-programacion-1-Aula1/
+../2034-logica-programacion-1-Aula3/
+../Alura-LogicaProgramacion/
+../../C/
+../../Python/
+../../Resumes/
+../../Spring/
+../../desktop.ini
+../../../Postulacion FP/
+../../../Volante_034282700__20240704.pdf
+../../../desktop.ini
+../../../informe_3116e9f3b4e7c824bafb08dc735dd240_034282700-1.pdf
+../../../../Documents/
+../../../../Downloads/
+../../../../Dropbox/
+../../../../Favorites/
+../../../../IMEINOTE10.txt
+../../../../IdeaProjects/
+../../../../Links/
+../../../../MCreatorWorkspaces/
+../../../../Music/
+../../../../NTUSER.DAT
+../../../../NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+../../../../NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+../../../../NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+../../../../OneDrive/
+../../../../Pictures/
+../../../../Saved Games/
+../../../../Searches/
+../../../../Tracing/
+../../../../Videos/
+../../../../eclipse/
+../../../../ntuser.dat.LOG1
+../../../../ntuser.dat.LOG2
+../../../../ntuser.ini
+../../../../pag.html
+../../../../pip
+../../../../source/

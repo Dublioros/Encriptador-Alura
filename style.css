@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     background: fixed;
     background-color: black;
-    background-image: url(./images/background.jpg);
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,19 +64,35 @@ body.fade-in {
 }
 
 .nav-links li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .nav-links a {
     color: var(--text-color);
-    font-size: 1.2rem;
-    transition: color 0.5s ease;
+    font-size: 1.5rem;
+    transition: color 0.5s ease, transform 0.5s ease;
     font-weight: 500;
 }
 
 .nav-links a:hover {
     color: var(--text-lightblue);
+    font-weight: 650;
 }
+
+/* Microphone */
+img#btn-speech {
+    display: inline-block;
+    align-self: flex-end;
+    cursor: pointer;
+    width: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+img#btn-speech:hover,
+img#btn-speech:active {
+    transform: scale(1.5);
+}
+
 
 /* Styling for the title */
 h1.title,
@@ -90,6 +106,7 @@ h2.subtitle {
 
 h2.subtitle {
     font-size: 1.5rem;
+    justify-content: space-between;
 }
 
 /* Styling for the main section */
@@ -343,9 +360,13 @@ strong.strong-josedev {
     input.btn {
         width: 144px;
     }
+
+    textarea {
+        width: -webkit-fill-available;
+    }
 }
 
-@media (max-width: 371px) {
+@media (max-width: 375px) {
     
     .container-left, .container-right {
         width: 200px;
@@ -354,7 +375,23 @@ strong.strong-josedev {
     .div-btn {
         display: contents;
     }
+
+    .nav-links a {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: inline-grid;
+        justify-content: end;
+        justify-items: flex-end;
+    }
+
+    p.footer-paragraph {
+        margin: 0 0 0 1rem;
+    }
 }
+
 
 /* HTML: <div class="loader"></div> */
 .loader {

@@ -6,6 +6,14 @@ function toLowerCase(str) {
     return str.toLowerCase();
 }
 
+// Remove special characters and accents
+function cleanText(str) {
+    return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-zñ\s]/gi, "");
+}
+
 // Receive only letters and spaces
 function verifyLetter(event) {
     if (event.key.match(/[a-zñ\s]/i) == null) {
@@ -32,7 +40,7 @@ function showResult(message, text) {
         timer: 1500,
         background: '#15415F',
         color: 'white',
-        heightAuto: false
+        heightAuto: false,
     });
 }
 
@@ -40,8 +48,10 @@ function showResult(message, text) {
 function handleTransformation(type) {
     const isEncrypt = type === 'encrypt';
     const textArea = document.getElementById("area-origin");
-    const text = textArea.value.toLowerCase();
+    let text = textArea.value.toLowerCase();
     const loaderElement = document.querySelector('.loader');
+
+    text = cleanText(text);
 
     if (/^[a-zñ\s]*$/.test(text) && text.length > 0) {
         const codifications = isEncrypt ?
@@ -65,7 +75,7 @@ function handleTransformation(type) {
         if (loaderElement) {
             loaderElement.classList.remove('ready');
         }
-    }    
+    }
 }
 
 // Function to encrypt text
@@ -137,6 +147,47 @@ function clearText() {
     });
 }
 
+// Speech recognition setup
+function startSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'es-ES';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.start();
+
+    recognition.onresult = function(event) {
+        let speechResult = event.results[0][0].transcript.toLowerCase();
+        speechResult = cleanText(speechResult);
+        document.getElementById("area-origin").value = speechResult;
+        Swal.fire({
+            icon: "success",
+            title: "Text recognized successfully",
+            showConfirmButton: false,
+            timer: 1500,
+            background: '#15415F',
+            color: 'white',
+            heightAuto: false
+        });
+    };
+
+    recognition.onspeechend = function() {
+        recognition.stop();
+    };
+
+    recognition.onerror = function(event) {
+        Swal.fire({
+            icon: "error",
+            title: "Speech recognition error",
+            footer: `Error: ${event.error}`,
+            background: '#15415F',
+            color: 'white',
+            heightAuto: false
+        });
+    };
+}
+
 // Transition Function
 document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("fade-in");
@@ -144,6 +195,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add event listeners for encrypt and decrypt buttons
     document.getElementById("btn-encode").addEventListener("click", encrypt);
     document.getElementById("btn-decode").addEventListener("click", decrypt);
+
+    // Add event listener for speech recognition button
+    document.getElementById("btn-speech").addEventListener("click", startSpeechRecognition);
 });
 
 // Handle navigation links fade-out
