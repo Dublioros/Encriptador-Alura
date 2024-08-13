@@ -370,6 +370,10 @@ strong.strong-josedev {
         display: contents;
     }
 
+    h2.subtitle {
+    align-items: center;
+    }
+
     .nav-links a {
         font-weight: 400;
         font-size: 20px;
